@@ -21,3 +21,5 @@ class TestNotes(unittest.TestCase):
 
     def test_mention_ajourne(self):
         self.assertEqual(mention(8), "Ajourné")
+    
+
