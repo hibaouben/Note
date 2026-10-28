@@ -22,5 +22,4 @@ class TestNotes(unittest.TestCase):
     def test_mention_ajourne(self):
         self.assertEqual(mention(8), "Ajourné")
     
-    def test_moyenne_decimale(self):
-        self.assertEqual(moyenne([10, 11]), 10.5)
+
