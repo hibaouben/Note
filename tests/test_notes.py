@@ -1,5 +1,5 @@
 import unittest
-from src.notes import moyenne
+from src.notes import moyenne, mention
 
 
 class TestNotes(unittest.TestCase):
@@ -12,3 +12,12 @@ class TestNotes(unittest.TestCase):
     def test_liste_vide(self):
         with self.assertRaises(ValueError):
             moyenne([])
+
+    def test_mention_tres_bien(self):
+        self.assertEqual(mention(17), "Très bien")
+
+    def test_mention_passable(self):
+        self.assertEqual(mention(10), "Passable")
+
+    def test_mention_ajourne(self):
+        self.assertEqual(mention(8), "Ajourné")
